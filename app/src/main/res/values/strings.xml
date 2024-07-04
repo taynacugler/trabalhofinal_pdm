@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">trabfinalTayna</string>
+    <string name="selecione_tipo_grao">Selecione o tipo de grão</string>
+    <string-array name="tipos_grao">
+        <item>Arábica do cerrado</item>
+        <item>Conilon</item>
+    </string-array>
+
+    <string name="selecione_ponto_torra">Selecione o ponto de torra</string>
+    <string-array name="pontos_torra">
+        <item>média</item>
+        <item>forte</item>
+    </string-array>
+
+</resources>

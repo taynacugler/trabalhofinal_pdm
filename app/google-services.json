@@ -1,0 +1,31 @@
+{
+  "project_info": {
+    "project_number": "720803628882",
+    "project_id": "trabfinaltayna",
+    "storage_bucket": "trabfinaltayna.appspot.com"
+  },
+
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720803628882:android:dd4ff59e3b0d30ebfa1c8b",
+        "android_client_info": {
+          "package_name": "com.example.trabfinaltayna"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPTglMCRcDD9Cr6sh3MxA3Uo5DraBHMQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+
+}

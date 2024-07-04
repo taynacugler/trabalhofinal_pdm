@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/show_cpfpedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CPF do cliente:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_deletepedido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_verpedido"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="381dp"
+        android:layout_height="239dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista de produtos"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_deletepedido"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/bt_deletepedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deletar pedido"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/show_cpfpedido"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="ID Produto"
+        app:layout_constraintBottom_toTopOf="@+id/get_quant"
+        app:layout_constraintEnd_toStartOf="@+id/bt_addproduto"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/bt_addproduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add produto"
+        app:layout_constraintBottom_toTopOf="@+id/get_quant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextText"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/deleteprod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deletar produto"
+        app:layout_constraintBottom_toTopOf="@+id/bt_alterarped"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/produtodelete"
+        app:layout_constraintTop_toBottomOf="@+id/get_quant"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/produtodelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="ID do item:"
+        app:layout_constraintBottom_toTopOf="@+id/bt_alterarped"
+        app:layout_constraintEnd_toStartOf="@+id/deleteprod"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/get_quant"
+        app:layout_constraintVertical_bias="0.558" />
+
+    <EditText
+        android:id="@+id/get_quant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Quantidade"
+        app:layout_constraintBottom_toTopOf="@+id/deleteprod"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_addproduto"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/bt_alterarped"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alterar Pedido"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deleteprod"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/show_pedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="ID do pedido:"
+        app:layout_constraintBottom_toTopOf="@+id/show_cpfpedido"
+        app:layout_constraintEnd_toStartOf="@+id/bt_verpedido"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/bt_verpedido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver pedido"
+        app:layout_constraintBottom_toTopOf="@+id/show_cpfpedido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/show_pedido"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

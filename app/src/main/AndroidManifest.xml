@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TrabfinalTayna"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Telas.SegundaTela" />
+
+        <activity android:name=".Telas.TerceiraTela" />
+        <activity android:name=".Telas.QuartaTela" />
+        <activity android:name=".Telas.SextaTela" />
+        <activity android:name="ClienteAdapter" />
+        <activity android:name="ProdutoAdapter" />
+        <activity android:name=".Telas.QuintaTela" />
+        <activity android:name=".Telas.CadastroProduto" />
+        <activity android:name=".Telas.TelaPedido" />
+        <activity android:name=".Telas.NovoPedido" />
+        <activity android:name=".Telas.NovoPedidoItens" />
+        <activity android:name=".Telas.VerPedido" />
+
+
+
+
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>
