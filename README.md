@@ -1,24 +1,60 @@
-Objetivo era fazer um programa para a empresa “Café Ouro Negro de Minas” (fabricante de
-café especial). O programa deve permitir a inserção de clientes, produtos e
-pedidos. Cada vendedor terá o programa rodando em seu celular e as seguintes
-funcionalidades devem estar presentes:
-Programa para venda de café
-1- Tela Inicial:
-a) Clientes (dono do supermercado que comprará nosso café).
-b) Produtos (temos vários tipos de café)
-c) Pedidos
-2- Clientes:
-a) Cadastrar clientes (CPF (String), nome (String), telefone (String), endereço
-(String), Instagram (String)).
-b) Inserir, listar, busca individual (pelo id), deletar e alterar.
-3- Produtos:
-a) Produto (id_produto (String), tipo do grão (String: Arábica do cerrado /
-Conilon), ponto da torra (média / forte), valor (Double), blend (boolean)).
-b) Inserir, listar, busca individual (pelo id), deletar e alterar.
-4- Pedidos 
-a) Novo pedido (vincula um cliente a um novo pedido).
-b) Salvar o código do pedido, data e quais itens serão inseridos naquele mesmo
-pedido.
-c) Listar pedidos (por cliente).
-d) Alterar pedido.
-e) Excluir pedidos
+# Café Ouro Negro de Minas
+
+## Programa para Venda de Café
+
+### Descrição
+
+Este programa foi desenvolvido para a empresa “Café Ouro Negro de Minas”, fabricante de café especial. Ele permite a inserção de clientes, produtos e pedidos. Cada vendedor pode rodar o programa em seu celular, proporcionando as seguintes funcionalidades:
+
+### Funcionalidades
+
+#### 1. Tela Inicial
+- **Clientes**: Dono do supermercado que comprará nosso café.
+- **Produtos**: Diversos tipos de café disponíveis.
+- **Pedidos**: Gestão dos pedidos realizados.
+
+#### 2. Clientes
+- **Cadastrar Clientes**:
+  - **CPF** (String)
+  - **Nome** (String)
+  - **Telefone** (String)
+  - **Endereço** (String)
+  - **Instagram** (String)
+- **Operações**:
+  - Inserir
+  - Listar
+  - Busca individual (pelo ID)
+  - Deletar
+  - Alterar
+
+#### 3. Produtos
+- **Cadastrar Produto**:
+  - **ID do Produto** (String)
+  - **Tipo do Grão** (String: Arábica do Cerrado / Conilon)
+  - **Ponto da Torra** (média / forte)
+  - **Valor** (Double)
+  - **Blend** (boolean)
+- **Operações**:
+  - Inserir
+  - Listar
+  - Busca individual (pelo ID)
+  - Deletar
+  - Alterar
+
+#### 4. Pedidos
+- **Novo Pedido**: Vincula um cliente a um novo pedido.
+- **Detalhes do Pedido**:
+  - Código do Pedido
+  - Data
+  - Itens inseridos no pedido
+- **Operações**:
+  - Listar pedidos (por cliente)
+  - Alterar pedido
+  - Excluir pedidos
+
+### Tecnologias Utilizadas
+
+- **Linguagem**: Kotlin
+- **Plataforma**: Android
+- **Interface Gráfica**: Jetpack Compose
+- **Banco de Dados**: Firebase Firestore
