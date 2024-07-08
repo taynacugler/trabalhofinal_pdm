@@ -56,5 +56,4 @@ Este programa foi desenvolvido para a empresa “Café Ouro Negro de Minas”, f
 
 - **Linguagem**: Kotlin
 - **Plataforma**: Android
-- **Interface Gráfica**: Jetpack Compose
 - **Banco de Dados**: Firebase Firestore
